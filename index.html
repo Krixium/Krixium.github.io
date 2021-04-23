@@ -1,33 +1,18 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
-        <title>WoW Resist Mitigation Calculator</title>
-    </head>
-    <body>
-        <div class="container py-5" style="width: 400px;">
-            <h1 class="text-center">Resist Mitigation Calculator</h1>
-            <form>
-                <div class="form-group">
-                    <label for="casterLevel">Caster Level</label>
-                    <input class="form-control" type="text" id="casterLevel" value="63"></input>
-                </div class="form-group">
-                <div>
-                    <label for="initResist">Current Resist</label>
-                    <input class="form-control" type="text" id="initResist"></input>
-                </div>
-                <div class="form-group">
-                    <label for="finalResist">New Resist</label>
-                    <input class="form-control" type="text" id="finalResist"></input>
-                </div>
-                <div class="form-group">
-                    <button class="btn btn-primary" type="button" onclick="calcButtonClicked()">Calculate</button>
-                </div>
-            </form>
-            <div class="text-center">
-                <h3><b><span id="output"></span><b></b></h3>
-            </div>
-        </div>
-        <script src="app.js"></script>
-    </body>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
+    <title>Quest ID to WoWHead Link Converter</title>
+</head>
+
+<body>
+    <div>
+        <label>Quest IDs<label /><textarea id="questIdInputField"></textarea>
+        <button onclick="generateLinks()">Go</button>
+    </div>
+    <div id="output"></div>
+    <script src="app.js"></script>
+</body>
 </html>
